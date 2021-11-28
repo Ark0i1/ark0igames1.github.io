@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ark0i Games</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+
+
+
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+.button1 {
+
+  background-color: green;
+  color: white;
+    
+  padding: 3px 10px;
+  margin: 9px 0;
+  border: white;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+
+/* Set a style for all buttons */
+button {
+
+  background-color: gray;
+  color: white;
+    
+  padding: 3px 10px;
+  margin: 9px 0;
+  border: white;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+.glyphicon
+{
+
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.Games
+{
+background-image: url("file:///C:/Users/LENOVO/Downloads/10.png");
+background-size: cover;
+color: white;
+font-face:American Captain;
+
+}
+
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+.paragraf
+{
+  color: white;
+  font-family: black;
+  font-family: montserrat;
+}
+.amator-dedektif
+{
+  color: black;
+  text-align: center;
+ 
+}
+
+.amator-dedektif:hover
+{
+ opacity: 0.8;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+.navbar
+{
+  padding-top: 15px
+  padding-bottom: 15px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  background-color: white; 
+  color: #000000;
+}
+
+.navbar-nav li a:hover
+{
+color: red !important ;
+}
+  
+
+.All-Games
+{
+    display: inline-flex;
+  justify-content: space-evenly;
+  padding: 30px;
+  text-align: center;
+}
+.paragrapth
+{
+  color: white;
+  font-family: montserrat;
+  text-align: center;
+}
+
+body
+{
+  font: 20px Montserrat;
+  line-height: 1.8;
+  color: #000000;
+}
+p
+{
+
+  border: 10px black;
+  font-size: 16px;
+  color: black;
+}
+
+.margin
+{
+  margin-bottom: 45px;
+  color: #0000000;
+}
+
+.basliq
+{
+  color: white;
+  font-family: Montserrat;
+  text-align: center;
+}
+
+.b-1
+{
+background-color: #282828;
+
+}
+
+.Menu
+{
+background-color: black;
+background-size: cover;
+}
+
+.container-fluid
+{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+
+
+
+
+
+
+.btn {
+  border: 2px white;
+  background-color: black;
+  color: white;
+  height: 10%;
+  width: 10% ;
+  padding: 10px 1px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.success {
+  border-color: #AAAAAA;
+  color: white;
+}
+
+.success:hover {
+  background-color: white;
+  color: black;
+}
+
+
+
+
+.gmebtn
+{
+  border: 3px white;
+  background-color: black
+}
+
+.cards
+{
+  display: inline-flex;
+  justify-content: space-evenly;
+
+  padding: 30px;
+
+
+}
+
+.elaqe
+{
+  color: white;
+  text-align:center;
+  font-size: 25px;
+}
+
+.footer
+{
+  text-align: center;
+  background-color: #353535;
+}
+.instagram
+{
+  background-color: white;
+  border-radius: 50px;
+   padding: 12px;
+   width: 5%
+}
+
+.news
+{
+  background-image: url("file:///C:/Users/LENOVO/Desktop/Site/abstract-geometric-white-background-free-vector.webp");
+}
+
+
+.new
+{
+  background-image: url("file:///C:/Users/LENOVO/Downloads/New%20Project%20(46).png");
+}
+
+.newstext
+{
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+
+
+.newstext
+{
+  text-align: center;
+  color: black;
+  font-size: 40px;
+}
+
+
+.singinbtn
+{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  height: 10%;
+  width: 10%;
+  text-align: center;
+  font-family:montserrat;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  
+}
+.singinbtn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+.huquq{
+  font-family: montserrat;
+  font-size: 30px;
+  border-style: solid;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 25%;
+  border-radius: 5px ;
+  justify-content: flex-end;
+  background-color: white;
+
+}
+.huquq:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.law {
+color: black;
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+<div class="Menu">
+  <center><img src="file:///C:/Users/LENOVO/Downloads/New%20Project%20(43)%20(1).png" width="200" height="200"></center>
+<h1 class="basliq">Yarım Qalmış Bir Oyun</h1>>
+<p class="paragrapth"> </p>
+
+
+
+
+<div class="Games">
+
+<center><b><p>Yarım Qalmış Oyun-</b>Madderam adlı oyunumuzun hekyəsi əslində bir yuxu idi,kimsə tərəfindən yaddaşımızı iitirmiş şəkildə birlikdə 3 nəfər olmaqlar ayılırıq.Oyunda sizin yanınızda 1 xəyanətkar və 1 məsum var.Oyununda seçdiyimiz yerə görə final dəyişir.3 ədəd son var(Yanlış Son,Doğru Son və Alternatif son).Oyun UNDERTALE oyunundan təsirlənərək düzəldiləcəkdi.Deyil oyunun yarımı heç 4/1 hazır deyil.Oyununun davam etdirilməsi gələcək planlarımızda yoxdur.Oyundan Görüntülər</p></center>
+
+<center>
+   <hr>
+ <h1 class="ha1">Oyundan görüntülər</h1>
+
+<img src="file:///C:/Users/LENOVO/Documents/Bandicam/bandicam%202021-11-28%2010-47-28-490.png" width="350" height="220">
+<img src="file:///C:/Users/LENOVO/Documents/Bandicam/bandicam%202021-11-28%2010-47-47-035.png" width="350" height="220">
+<img src="file:///C:/Users/LENOVO/Documents/Bandicam/bandicam%202021-11-28%2010-47-53-201.png" width="350" height="220">
+<p><video width="420" height="340" controls>
+  <source src="file:///C:/Users/LENOVO/Documents/Bandicam/bandicam%202021-11-28%2010-47-09-741.mp4" type="video/mp4">
+
+
+</video></p>
+
+
+
+</a>
+</center>
+</div>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+ 
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+<!--Login-->
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="Ark0iGames2.html" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="file:///C:/Users/LENOVO/Desktop/481069114737574599622680.png" height="70" width="10" alt="Avatar" class="avatar" >
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>İstifadəçi Adı</b></label>
+      <input type="text" placeholder="İstifadəçi Adınızı Daxil Edin" name="uname" required>
+
+      <label for="psw"><b>Şifrə</b></label>
+      <input type="password" placeholder="Şifrənizi Daxil Edin" name="psw" required>
+        
+        <a href="Ark0iGames2.html">  <button class="button1" type="submit">Daxil Ol</button></a>
+      <label>
+        <input type="checkbox" checked="checked" name="remember">Məni Xatırla
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Ləğv Et</button>
+
+    </div>
+  </form>
+</div>
+</body>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+
+
+
